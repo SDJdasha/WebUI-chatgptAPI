@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  const apiKey = "这里替换成key";
+  const apiKey = "put-your-api-key-here";
   let messages = [];
 
   function addMessageToChat(message, sender) {
