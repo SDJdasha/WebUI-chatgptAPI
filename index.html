@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenAI Chat API</title>
+    <script src="jquery-3.6.4.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>OpenAI即时对话</h1>
+    <form id="chat-form">
+        <p class="small-text">说明：未勾选“连续对话”时，AI的回答只与当前输入的内容有关。<br>勾选时，AI会结合勾选后的，最近3回合对话。不建议勾选，需要消耗很多流量，请尽量用一段话完整叙述问题。</p>
+        <label for="model">模型(gpt-3.5-turbo):</label><br>
+        <input id="model" type="text" value="gpt-3.5-turbo" required><br><br>
+        <label for="message">输入框:</label><br>
+        <textarea id="message" name="message" rows="4" cols="100" required></textarea>
+        <br>
+        <button id="submit-button" type="submit">发送</button>
+        <br>
+        <input type="checkbox" id="continuous" name="continuous">
+        <label for="continuous">连续对话</label>        
+        <br>
+    </form>
+    <ul id="chat-list">
+    </ul>
+</body>
+</html>

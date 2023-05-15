@@ -1,0 +1,7 @@
+打开app.js，输入apiKey（https://platform.openai.com/account/api-keys
+双击打开index.html文件即可。
+
+如需修改apiKey，请用记事本打开app.js，
+将这一行（应该是第二行）中双引号内的内容：const apiKey = "双引号中的这部分替换为key";
+不要输入空格，不要修改或删除任何标点。
+替换结果示例：const apiKey = "sk-uywFicj27ajsWzioT3BlbkABCaNYpPHfql5L6nnm0AC";（本文档示例里这个key是假的，用不了）
